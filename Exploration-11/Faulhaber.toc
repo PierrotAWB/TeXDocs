@@ -1,0 +1,7 @@
+\contentsline {section}{\numberline {1}Introduction and Initial Exposure}{3}
+\contentsline {subsection}{\numberline {1.1}Gauss}{3}
+\contentsline {subsection}{\numberline {1.2}Sum of Squares}{4}
+\contentsline {subsection}{\numberline {1.3}Sum of Cubes and then some}{6}
+\contentsline {section}{\numberline {2}Generalizations}{8}
+\contentsline {subsection}{\numberline {2.1}The Bernoulli Numbers}{9}
+\contentsline {subsection}{\numberline {2.2}Faulhaber's Formula}{10}
