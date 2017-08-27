@@ -1,0 +1,10 @@
+\contentsline {section}{\numberline {1}What is a case study?}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}Overview}{2}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Logistical Details}{2}{subsection.1.2}
+\contentsline {section}{\numberline {2}Grading}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Performance Indicators}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}$\textrm {21}^{\textrm {st}}$ Century Skills}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Mark Schemes}{5}{subsection.2.3}
+\contentsline {section}{\numberline {3}Resources}{5}{section.3}
+\contentsline {section}{\numberline {4}Tips and Tricks for Success}{6}{section.4}
+\contentsline {subsection}{\numberline {4.1}The Four I's}{8}{subsection.4.1}

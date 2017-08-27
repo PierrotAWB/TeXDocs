@@ -1,8 +1,94 @@
-\documentclass[article]{12pt}
+\documentclass[11pt]{article}
+\usepackage{indentfirst}
+\usepackage[margin=1.5in]{geometry}
 \begin{document}
-\title{Hello, world!}
-\maketitle
 
-\section{Lorem Ipsum}
-Hello, world!
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage} % Suppresses displaying the page number on the title page and the subsequent page counts as page 1
+	\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for horizontal lines, change thickness here
+	
+	\center % Centre everything on the page
+
+	\vspace*{50px}
+
+	%------------------------------------------------
+	%	Title
+	%------------------------------------------------
+	
+	\HRule\\[0.4cm]
+	
+	{\huge\bfseries Solution Manual to \textit{The Art and Craft of Problem Solving}}\\[0.4cm] % Title of your document
+	
+	\HRule\\[1.5cm]
+	
+	%------------------------------------------------
+	%	Author(s)
+	%------------------------------------------------
+	
+%	\begin{minipage}{0.4\textwidth}
+%		\begin{flushleft}
+%			\large
+%			\textit{Written by}\\
+%			Andrew \textsc{Wang} % Your name
+%		\end{flushleft}
+%	\end{minipage}
+%	~
+%	\begin{minipage}{0.4\textwidth}
+%		\begin{flushright}
+%			\large
+%			\textit{Project start}\\
+%			August 25, \textsc{2017} % Supervisor's name
+%		\end{flushright}
+%	\end{minipage}
+	
+	% If you don't want a supervisor, uncomment the two lines below and comment the code above
+	{\large\textit{Written by}}\\
+	Andrew \textsc{Wang} % Your name
+	
+	%------------------------------------------------
+	%	Date
+	%------------------------------------------------
+	
+	\vspace*{310px}
+	
+	{\large August 25, 2017} % Date, change the \today to a set date if you want to be precise
+	
+	%------------------------------------------------
+	%	Logo
+	%------------------------------------------------
+	
+	%\vfill\vfill
+	%\includegraphics[width=0.2\textwidth]{placeholder.jpg}\\[1cm] % Include a department/university logo - this will require the graphicx package
+	 
+	%----------------------------------------------------------------------------------------
+	
+	\vfill % Push the date up 1/4 of the remaining page
+	
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\section{Chapter 1}
+\vspace{0.5\baselineskip}
+This chapter is simply an introduction to the book, its conventions and 'he art and craft of problem solving' itself. The only problems are in chapter 1.3.
+\vspace{\baselineskip}
+
+\stepcounter{subsection}
+\stepcounter{subsection}
+
+\subsection{}
+This section includes samples of 'recreational problems' $(1.3.1 - 1.3.3)$, 'contest problems' $(1.3.4 - 1.3.16)$, and 'open-ended problems' $(1.3.17 - 1.3.20)$. \vspace{\baselineskip}
+
+\subsubsection*{Recreational Problems}
+
+\begin{description}
+	\item[1.3.1] In this problem, it suffices to show that if, on the first day, the monk starts at the base of the mountain and finishes at the summit, and that on the second day, the monk starts at the summit and finishes at the base, he would have 'crossed paths with his ghost'.
+\end{description}
+\subsubsection*{Contest Problems}
+\subsubsection*{Open-Ended Problems}
+
 \end{document}
