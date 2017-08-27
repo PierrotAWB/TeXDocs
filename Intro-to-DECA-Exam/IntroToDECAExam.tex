@@ -1,0 +1,274 @@
+\documentclass[12pt]{article}
+\usepackage{indentfirst, setspace, fancyhdr, hyperref, xcolor, textcmds, enumitem}
+
+\definecolor{linkBlue}{RGB}{51, 102, 187}
+
+\pagestyle{fancy}
+\rhead{Introduction to the DECA Exam}
+\lhead{}
+
+\hypersetup{
+	colorlinks = true,
+	 linkbordercolor = linkBlue,
+	linkcolor = linkBlue,
+	pdfborderstyle={/S/U/W 1},
+	urlcolor = linkBlue,
+	urlbordercolor = gray
+}
+
+%Exam question template
+%\begin{enumerate}[resume]
+%	\item
+%	\begin{choices}
+%		\choice
+%		\choice
+%		\choice
+%		\choice
+%	\end{choices}
+%\end{enumerate}
+
+% ------------------------------------ On page TOC
+
+\makeatletter
+\newcommand*{\toccontents}{\@starttoc{toc}}
+\makeatother
+
+%------------------------------------- Exam question formatter BEGIN
+\newcounter{choice}
+\renewcommand\thechoice{\Alph{choice}}
+\newcommand\choicelabel{\thechoice.}
+
+\newenvironment{choices}%
+  {\list{\choicelabel}%
+     {\usecounter{choice}\def\makelabel##1{\hss\llap{##1}}%
+       \settowidth{\leftmargin}{W.\hskip\labelsep\hskip 2.5em}%
+       \def\choice{%
+         \item
+       } % choice
+       \labelwidth\leftmargin\advance\labelwidth-\labelsep
+       \topsep=0pt
+       \partopsep=0pt
+     }%
+  }%
+  {\endlist}
+
+\newenvironment{oneparchoices}%
+  {%
+    \setcounter{choice}{0}%
+    \def\choice{%
+      \refstepcounter{choice}%
+      \ifnum\value{choice}>1\relax
+        \penalty -50\hskip 1em plus 1em\relax
+      \fi
+      \choicelabel
+      \nobreak\enskip
+    }% choice
+    % If we're continuing the paragraph containing the question,
+    % then leave a bit of space before the first choice:
+    \ifvmode\else\enskip\fi
+    \ignorespaces
+  }%
+%------------------------------------- Exam question formatter END
+
+\begin{document}\thispagestyle{empty}
+
+% TITLE
+
+	\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} 
+	\begin{center}
+
+	% \vspace*{50px}
+	\HRule\\[0.4cm]
+	
+	{\huge\bfseries An Introduction to the DECA \textit{Multiple Choice Exam}}\\[0.4cm] 
+	
+	\HRule\\[0.4cm]
+	{Written by: \textsc{Andrew Wang}} \\[1cm]
+	{\large\bfseries \textsc{CONTENTS}}\\[0.4cm] 
+	\vspace*{.5\baselineskip}
+	\toccontents
+	\end{center}
+	
+ \vspace*{2\baselineskip}
+\section{Overview}
+
+	The DECA Multiple choice exam represents one half (for team events) or one third (for individual events) of your composite DECA score. Participants are tasked with answering 100 questions with 4 choices each all within 75 minutes. Content consists mostly of business administration, though DECA, with fair consistency, surveys a host of topics ranging from business law (finance specific), to business ethics, as well as \textit{emotional/communication} type questions. \\
+	
+	Here, emotional/communication type questions refer to those whose central topic concerns emotion or communication (as we'll see, this is rather common). These will be relatively straightforward, only requiring an ability to read and reason with common sense. \\
+	
+	Other questions may focus more on very specific trivia, terminology (i.e., jargon and other buzzwords), human resources issues, and even economic concepts. \\
+	
+	Sometimes exams are frustrating. Although DECA definitions and DECA logic are notoriously infuriating, your job is not to complain, but to answer correctly. This is yet another reason to practice exams religiously: to accustom yourself with DECA's idiosyncrasies. \\
+	
+	All in all, even if you do not spend very much time practising with old exams, you'll find that using your deductive skills will get you a \lq satisfactory' score. It is important to remember that in order to advance, you must be near the head of the pack. Accordingly, with every minute you put in that others don't, you're giving yourself a big advantage. You might start off with an exam score in the 50's or 60's; be warned: a score in the \textbf{low to mid 70's} will generally qualify you for provincial competition. At the provincial level, to place around the $\textrm{93}^{rd}$ percentile (singular medal winner, not necessarily ICDC qualifier), you typically will need at least a \textbf{mid to high 80} (I'm operating under the assumption that your case(s) are around the same score, i.e., $\pm 5$ or so). \\
+	
+	The purpose of this document is to provide a brief tour of the many of the exam question types you might see on your finance exam. The sections with asterisks (*) are generally most worthy of careful study. In each section, I provide resources specific to that topic as I see fit. At the end, I provide a list of general purpose resources that will reap you great return, should you study and \textit{master} them.
+	
+\section[Emotion, Communication, and Common Sense]{\texorpdfstring{Emotion, Communication, and Common \\ Sense}{Emotion, Communication, and Common Sense}}
+This section focuses on the most approachable DECA questions. Here, no real specific industry knowledge is required to systematically answer the question. At the same time, because of the apparent simplicity with such questions, it is very easy to be \lq tricked'. That is, DECA seems to have its own definitions. We begin with the following \lq freebie' question: 
+
+\begin{enumerate}
+\item Writing a letter to your grandmother is an example of?
+  \begin{choices}
+    \choice nonverbal communication. 
+    \choice verbal communication. 
+    \choice speech.
+    \choice body language.
+  \end{choices}
+\end{enumerate}
+
+It seems here, that the answer seems rather trivial. The key idea in the question is \lq writing a letter', which is \textit{not} an example of verbal communication (no \textit{speaking }involved), nor speech (for the same reason), nor body language (no, uh, \textit{body} |involved in the letter).  Therefore the answer is A.  \\
+
+Or is it? According to the official answer key, the answer is B. Blast! Surely there's a mistake? Remember the earlier spiel about accustoming oneself to DECA definitions and logic? This is an example of just how ambiguous and tricky your exam questions might be. DECA defines \lq verbal communication' as \lq the exchange of information through the use of words, including writing and speech'. Their definition includes writing. This is problematic because, as \href{http://www.dictionary.com/browse/verbal}{Dictionary.com} says in definition 3, \lq expressed in spoken words; oral rather than written', we may very well interpret verbal as having nothing to do with writing. At the same time, definition 2 and 4 agree with DECA. Don't beat yourself up, this was an awkward one (plus, it would likely be the case that the majority of students would have been tricked on this one| a point off for everybody is a point off for nobody!)
+
+\begin{enumerate}[resume]
+	\item Which of the following is a long-term goal:
+		\begin{choices}
+			\choice Finishing your English paper
+			\choice Passing your history test tomorrow
+			\choice Washing the dishes
+			\choice Getting a job at a publishing company
+		\end{choices}
+\end{enumerate}
+
+	After the previous question, we are on high alert. We compare the options and find that finishing an English paper, passing a test (the option says \lq tomorrow', so its probably not this anyway), and washing the dishes seem like rather short-term goals, at least with respect to getting a job. What if the English paper is your doctoral thesis? What if it is a six year project? Careful with this line of thought. It is important to \textbf{never assume that which is not explicitly stated} in the question. Since it says \ldq your English paper\rdq, i.e., the question is directed to a high school student, chances are that \ldq paper\rdq refers to a simple assignment. With all this in mind, we conclude that the correct answer is D. \\
+	
+	Indeed, the official answer key says, \lq Passing your history test tomorrow, washing the dishes, and finishing your English paper are all short-term goals because they can be accomplished in the very near future.'
+
+\begin{enumerate}[resume]
+	\item  Which of the following characteristics tends to have a close relationship with initiative:
+		\begin{choices}
+			\choice Truthfulness
+			\choice Insecurity
+			\choice Rudeness
+			\choice Industriousness
+		\end{choices}
+\end{enumerate}
+
+	Let us start by reminding ourselves of what it means to take initiative. Initiative is often explained as \lq doing, without having to be told to', generally a positive trait. This would immediately eliminate insecurity and rudeness, leaving truthfulness and industriousness. Now, we might not know exactly what industriousness means, but we can next reason that truthfulness actually has very little to do with \lq doing, without having to be told to'. Yes, we might say that one might take the initiative to tell the truth, but this can also be said about rudeness (i.e., taking the initiative to mistreat others) and insecurity (i.e., taking the initiative to obsess over one's flaws). Clearly, this is an absurd way to reason. Thus, we conclude that the correct answer is D, reassuring ourselves that \lq industriousness' likely has to do with \lq industry' which, if you remember the industrial revolution, may remind us of productivity. \\
+	
+	Indeed, the official answer key says, \ldq People who are industrious are energetic and hardworking on the job. This is closely related to their willingness to look for jobs to do.\rdq
+	
+\begin{enumerate}[resume]
+	\item  What should you do when you become annoyed with coworkers or customers?
+		\begin{choices}
+		  	\choice Avoid talking with them whenever possible.
+			\choice Tell them to be quiet and stop bothering you.
+			\choice Treat them the way you want them to treat you.
+			\choice Complain about them during a staff meeting. 
+		\end{choices}
+\end{enumerate}
+
+	If you have a rough idea of how one would conduct himself in a professional way, this should be straightforward. A is, although not the worst of the choices, not a good example of mature and professional behaviour. Yes, it may be in the best interest of both of the person in question and his coworkers to leave each other alone, but in the interest of good customer service, becoming annoyed and minimizing your communication with a customer may not be a very good course of action. B sounds too blunt, especially when spoken to a customer. C sounds like something DECA might try and promote, as it is both a good example of mature and professional behaviour and a positive course of action to take. D is perhaps the most unprofessional of all options. Comparing A and C (since A was not an absolute impossibility), we reason that C is the best option since it gives a certain sense of \lq morality'. \\
+	
+	The official key agrees, saying that \ldq Regardless of where you are, your interactions should be respectful and kind. Sometimes coworkers, customers, and even managers can get on your nerves. It's part of human nature to get annoyed with others. Regardless, you should always treat the people around you the way you would want them to treat you—with dignity, care, and respect.\rdq
+	
+\begin{enumerate}[resume]
+	\item Randall is working extra hours this week at his after-school job, and now he's not sure if he'll have enough time to study for his finals. He's starting to feel a lot of pressure and tension, also known as
+	\begin{choices}
+		\choice job satisfaction.
+		\choice productivity.
+		\choice stress.
+		\choice employee turnover.
+	\end{choices}
+\end{enumerate}
+
+This question, although simple, gives us insight to a powerful training technique: learning all the choices. It may be very apparent to you that the answer is C, but can you say, with certainty what is meant by \lq employee turnover'? In practice (namely, in a real exam setting), after convincing yourself that C is indeed the correct answer, it is necessary to continue to the next question. However, if you are practicing without timing constraints, quickly Google what employee turnover is! You'll quickly see that it is the rate at which leaving workers are replaced by new employees. Why is this technique useful? Because it is extremely likely that the incorrect answer of one question (which you may not understand before Googling it) is a choice on another question. If that is the case, you can eliminate it or answer with it, both with greater confidence than otherwise.
+
+\begin{enumerate}[resume] 
+	\item One reason that it is important to be very careful when using oral communication in business is that oral communication
+	\begin{choices}
+		\choice may not be remembered accurately. 
+		\choice should only be used for urgent messages. 
+		\choice is generally not misunderstood.
+		\choice is an informal communication method.
+	\end{choices}
+\end{enumerate}
+
+	Let us first parse the question. \lq important to be very careful' implies that the answer should be a reason for caution. We see that this is a caution against using oral communication in business. Thus, we can immediately eliminate C.  Next, option B, while indeed phrased as a cautionary statement, it simply is not true. Oral communication in business is often non-urgent: for instance, small talk and other informal communication. This brings us to option D. If we compare D against A, it seems that D may be the better option because of its apparent truth. At the same time, if we reason that it is not a very strong cautionary statement, i.e., it is not inherently a bad thing that oral communication may be relatively informal, then we tentatively conclude that the correct answer is A. Recall the DECA logic and definitions discussion from earlier. Have you ever heard of something along the lines of \lq you only remember 25\% of what you hear' and that the most effective way to learn is to teach? If you do, then reassure yourself that A is the correct answer. From the answer key: \ldq Listeners generally retain only about 25\% of what they hear, and they frequently don't remember it accurately. It is, therefore, important to choose words used in oral communication carefully and to try to make sure that listeners receive the intended message.\rdq 
+
+\begin{enumerate}[resume]
+	\item When organizing an oral presentation, you use cause-and-effect order to
+	\begin{choices}
+		\choice arrange material into related subcategories.
+		\choice describe a problem and a plan for solving it.
+		\choice emphasize the relationship between events.
+		\choice put items in time sequence. 
+	\end{choices}
+\end{enumerate}
+
+	This question is a testament of the power of inference. Although \lq cause-and-effect order' may not be in common language, it is fair to interpret it as something to do with grouping \lq things' by the way that one might produce or result in another. With that in mind, B does not sound like it is specific enough. D makes reference to the notion of organization and perhaps the \lq time sequence' has to do with something happening, and its effect happening at a later time. A only really makes a reference to organization. C is different in that it discusses the \lq relationship' between the \lq things' to be ordered. Referring back to \lq cause-and-effect order', we can reason that this reference to the \lq relationship between events' is fairly significant. Cause and effect means that one \lq thing' is the reason that another \lq thing' happened. This is a unique relationship that these two things would possess. Therefore, we conclude that the best answer is C. \\  
+	
+	Indeed, the answer key provides a nice explanation to each of the choices: \ldq Cause-and-effect order explains how one action or event causes another. The order that describes a problem and a plan for solving it is problem/solution order. The order that arranges material into related subcategories is topical order. The order that puts items in time sequence is chronological order.\rdq  \ Here, we \lq \textit{learn all the choices}.'
+
+
+\begin{enumerate}[resume]
+	\item Which of the following would be an effective way to communicate a job-related suggestion to your supervisor
+	\begin{choices}
+		\choice A letter of transmittal
+		\choice An office memorandum
+		\choice An executive summary
+		\choice A personal letter
+	\end{choices}
+\end{enumerate}
+
+	This question deals with forms of business communication in a non-trivial way. Without knowing with great certainty what exactly each of these is, the only thing you can do is guess, really. Either way, we can still try to eliminate some options in order to improve our chances of a correct guess. Noting that if the target audience is a supervisor, i.e., your senior, it is inappropriate to write a personal letter. At this point, without knowing any better, we might take a guess. However, if we understand that an executive summary is an overview of a complex business report/plan, that a letter of transmittal is a letter that accompanies a long report or proposal, and that an office memorandum, or memo, is the most commonly used method of in-house communication in many businesses (adapted from the official answer key), then we would next eliminate the executive summary and then the letter of transmittal (since the task is to communicate a suggestion and not a long proposal). Thus, the answer is B.
+
+15. What is one way that employees who routinely deal with customers can demonstrate a customer-service
+mindset?
+A. Speak in a monotone C. Stand at attention
+B. Make eye contact D. Keep a straight face
+
+The biggest communication issue for businesses engaging in international trade is
+A. language. C. power distance.
+B. corruption. D. religion.
+
+26. Expressing empathy and being willing to help others are the aspects of emotional intelligence that relate
+to
+A. relationship management. C. social awareness.
+B. self-management. D. self-awareness.
+
+27. Which of the following is a characteristic of individuals who are self-confident:
+A. Have positive thoughts C. Are aggressive with others
+B. Think they are always right D. Prefer to be in charge
+
+28. Which of the following is an example of positive self-talk?
+A. "I can do it!" C. “I wish I were smarter.”
+B. “If I fail, I'll be embarrassed.” D. “My coworkers are so annoying.”
+
+29. Behaviour that is characterized by respect for personal rights as well as for the rights of others is \underline{\hspace{2cm}} behaviour.
+A. aggressive C. offensive
+B. passive D. assertive
+
+11. Lana wants to include a two-dimensional graphic that shows the groupings and patterns of multiple
+variables in her business report. Which of the following graphic aids would best illustrate the data:
+A. Table C. Timeline
+B. Pie chart D. Scatter chart
+
+12. The human-resources manager sends an e-mail to all employees stating that they will need to park on
+the street on Tuesday because the maintenance department will be repairing the company's parking lot.
+This is an example of a(n)
+A. business proposal. C. informational message.
+B. projection report. D. formal inquiry.
+
+13. Which of the following is an example of horizontal communication in the workplace:
+A. An employee provides his/her manager with a status report about the company's new web site.
+B. A supervisor provides a line worker with feedback about her/his job performance.
+C. A manager provides a new employee with advice on job advancement within the company.
+D. An employee sends an e-mail to a coworker about a short-term project. 
+
+14. Before you can adapt your communication style to relate to businesspeople from other countries, you
+must first
+A. learn to speak the country's language fluently.
+B. realize that cultural differences exist.
+C. develop an ethnocentric attitude.
+D. change your personal values and beliefs. 
+
+
+
+\section{General Business Administration*}
+\section{Economic concepts}
+\section{Obscure and Esoteric Trivia*}
+\section{Resources}
+\end{document}
+
