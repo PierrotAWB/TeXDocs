@@ -1,7 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage{indentfirst, setspace, fancyhdr, hyperref, xcolor, textcmds}
 
-\definecolor{jade}{RGB}{61, 122, 122}
+\definecolor{linkBlue}{RGB}{51, 102, 187}
 
 \pagestyle{fancy}
 \rhead{Introduction to the DECA Case Study}
@@ -9,19 +9,12 @@
 
 \hypersetup{
 	colorlinks = true,
-	linkbordercolor = jade,
-	linkcolor = jade,
+	 linkbordercolor = linkBlue,
+	linkcolor = linkBlue,
 	pdfborderstyle={/S/U/W 1},
-	urlcolor = jade
+	urlcolor = linkBlue,
+	urlbordercolor = gray
 }
-
-\makeatletter
-\Hy@AtBeginDocument{%
-  \def\@pdfborder{0 0 3}% Overrides border definition set with colorlinks=true
-  \def\@pdfborderstyle{/S/U/W 1}% Overrides border style set with colorlinks=true
-                                % Hyperlink border style will be underline of width 1pt
-}
-\makeatother
 
 \makeatletter
 \newcommand*{\toccontents}{\@starttoc{toc}}
@@ -72,7 +65,7 @@
 
 \section{Grading}
 
-For an example case study, see the following \href{https://www.deca.org/wp-content/uploads/2014/08/HS_BFS_Web_Sample.pdf}{BFS case}. 
+For an example case study, see this \href{https://www.deca.org/wp-content/uploads/2014/08/HS_BFS_Web_Sample.pdf}{BFS case}. 
 
 \subsection{Performance Indicators}
 
